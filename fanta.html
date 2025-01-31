@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanta Product Details</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff6f61;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 5px solid #ff6f61;
+}
+
+.product {
+    margin-bottom: 30px;
+}
+
+.product-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.product-image {
+    width: 350px;
+    height: 350px;
+    margin-right: 50px;
+}
+.product-image1 {
+    width: 100px;
+    height: 250px;
+    margin-left: 130px;
+    margin-right: 170px;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.nutrition-btn {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.nutrition-btn:hover {
+    background-color: #e65a50;
+}
+
+sup {
+    font-size: 0.8em;
+    vertical-align: super;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fanta<sup>®</sup></h1>
+        <div class="product">
+            <div class="product-content">
+                <img src="https://www.coca-cola.com/content/dam/onexp/in/en/home-page-test-img/brands/fanta/updated-packshots/750x750-packshot-desktop.jpg/width1960.jpg" alt="Fanta Orange" class="product-image">
+                <div class="product-details">
+                    <h2>Flavourful Fanta: Great Orangy Taste</h2>
+                    <p>It comes in following sizes:</p>
+                    <ul>
+                        <li><strong>Cans:</strong> 180 ml, 300 ml, 330 ml</li>
+                        <li><strong>RGB:</strong> 200 ml, 300 ml, 330 ml</li>
+                        <li><strong>PET:</strong> 250 ml, 300 ml, 400 ml, 600 ml, 750 ml, 1250 ml, 1500 ml, 1750 ml, 2000 ml, 2250 ml</li>
+                    </ul>
+                    <button class="nutrition-btn">Show Nutritional Facts ▼</button>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-content">
+                <img src="https://www.coca-cola.com/content/dam/onexp/in/en/home-page-test-img/brands/fanta/apple-234-700-fanta-test.png/width1960.png" alt="Fanta Apple Delite" class="product-image1">
+                <div class="product-details">
+                    <h2>Fanta<sup>®</sup> Apple Delite</h2>
+                    <p>Apple fruit juice based beverage.<sup>2</sup></p>
+                    <p>It comes in following sizes:</p>
+                    <ul>
+                        <li><strong>Bottle:</strong> 250 ml, 600 ml</li>
+                    </ul>
+                    <button class="nutrition-btn">Show Nutritional Facts ▼</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

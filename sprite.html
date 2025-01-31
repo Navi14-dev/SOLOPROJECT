@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite Product Details</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #00a550;
+    margin-top: 0;
+}
+
+h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 5px solid #00a550;
+}
+
+.product-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.product-image {
+    width: 150px;
+    margin-left: 70px;
+    margin-right: 150px;
+}
+
+.product-details {
+    flex: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #00a550;
+    color: #fff;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+sup {
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+em {
+    font-style: italic;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Products</h1>
+        <div class="product">
+            <div class="product-content">
+                <img src="https://www.coca-cola.com/content/dam/onexp/in/en/home-page-test-img/brands/sprite/Sprite-234x700.png/width1960.png" alt="Sprite" class="product-image">
+                <div class="product-details">
+                    <h2>Sprite<sup>®</sup></h2>
+                    <p>Sprite's crisp taste with hit of lemon-lime flavour gives you that unmatched cut-through refreshment.<sup>1</sup></p>
+                    <p>It comes in following sizes:</p>
+                    <ul>
+                        <li><strong>Cans:</strong> 180 ml, 300 ml, 330 ml</li>
+                        <li><strong>RGB:</strong> 200 ml, 300 ml, 330 ml</li>
+                        <li><strong>PET:</strong> 250 ml, 300 ml, 400 ml, 600 ml, 750 ml, 1250 ml, 1500 ml, 1750 ml, 2000 ml, 2250 ml</li>
+                    </ul>
+                    <hr>
+                    <h3>Show Nutritional Facts</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Per 100ml</th>
+                                <th>% RDA* per serve<br>1 serving = 200ml</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Energy 49kcal</strong></td>
+                                <td>4.9 %</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Carbohydrates 12.2g</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total Sugars 11.7g</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Added Sugars 11.7g</td>
+                                <td>46.8%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total Fat 0g</strong></td>
+                                <td>0%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Protein 0g</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sodium 10.1mg</strong></td>
+                                <td>1%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><em>* Based on 2000kcal Diet</em></p>
+                    <hr>
+                    <h3>Ingredients</h3>
+                    <p>Carbonated Water, Sugar, Acidity Regulators (330, 331(III)), Preservative (211), Flavours (natural flavoring substances).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

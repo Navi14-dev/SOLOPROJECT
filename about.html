@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Premium Drinks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+       /* HEADER SECTION START */
+header {
+    background-color: black;
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 20px bisque;
+    margin-left: -2px;
+
+}
+
+header .logo {
+    color: orange;
+    text-align: center;
+    display: flex;
+}
+
+header .logo img {
+    height: 50px;
+    width: 50px;
+    margin: 10px 20px;
+    box-shadow: 2px 2px 20px orangered;
+    border-radius: 50%;
+}
+
+header .logo p {
+    padding-top: 25px;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+/* NAV BAR START */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 250px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+
+nav ul li a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+nav .buttons{
+  display: flex;
+  gap: 20px;
+  margin-right: -190px;
+  margin-left: 130px;
+  
+}
+nav .btn{
+   cursor: pointer;
+    height: 40px;
+    width: 90px;
+    background-color: #f09433;
+    box-shadow: 2px 2px  15px white;
+    font: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+nav .btn a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 15px;
+
+}
+
+nav .btn:hover{
+    background-color: white;
+    color: #f09433;
+}
+nav .btn a:hover{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f09433;
+}
+
+/* NAV BAR &  HEADER SECTION END */
+
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                        url('https://source.unsplash.com/random/1200x800/?cocktail') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #ff6b6b;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.4rem;
+            max-width: 700px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .about-content {
+            padding: 2rem;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .about-content:hover {
+            transform: translateY(-5px);
+        }
+
+        .about-content h2 {
+            color: #ff6b6b;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .about-content p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .journey {
+            background-color: #1e1e1e;
+            padding: 3rem;
+            border-radius: 10px;
+            margin: 4rem 0;
+        }
+
+        .journey h2 {
+            color: #ff6b6b;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .journey-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .milestone {
+            text-align: center;
+            padding: 2rem;
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .milestone:hover {
+            transform: translateY(-5px);
+        }
+
+        .milestone h3 {
+            color: #ff6b6b;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .specialties {
+            margin: 4rem 0;
+            padding: 2rem;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+        }
+
+        .specialties h2 {
+            color: #ff6b6b;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .specialties-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .specialty-item {
+            padding: 1.5rem;
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .specialty-item:hover {
+            transform: scale(1.02);
+        }
+
+        .specialty-item h3 {
+            color: #ff6b6b;
+            margin-bottom: 1rem;
+        }
+
+       
+/* FOOTER SECTION  START*/
+footer {
+    background-color: black;
+    border-top: 2px solid white;
+}
+
+.footer-cont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 600px;
+    box-shadow: 3px 3px 30px red;
+
+}
+
+.footer-info,
+.footer-contact h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: orangered;
+    padding-left: 155px;
+    padding-top: 50px;
+
+}
+
+.footer-logo p {
+    color: orange;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding-left: 720px;
+    margin-top: -65px;
+
+}
+
+.footer-info ul {
+    margin-left: -40px;
+}
+
+.footer-info ul li {
+    padding-left: 40px;
+    padding-top: 10px;
+    list-style: none;
+    gap: 50px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer-info ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.footer-info ul li a:hover {
+    color: orange;
+}
+
+.footer-contact h3 {
+    padding-left: 350px;
+}
+
+.footer-contact p {
+    padding-top: 10px;
+    padding-left: 350px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer-follow h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: orangered;
+    padding-left: 155px;
+    padding-top: 50px;
+}
+
+.footer-follow .access {
+    padding-left: 145px;
+    padding-top: 10px;
+}
+
+.footer-follow a {
+    padding: 10px;
+    font-size: 30px;
+
+}
+
+.fa-facebook {
+    color: #1877F2;
+    font-size: 1.9rem;
+}
+
+
+.fa-linkedin {
+    color: #0A66C2;
+    font-size: 1.9rem;
+}
+
+.fa-instagram {
+    background: linear-gradient(45deg,
+            #f09433 0%,
+            #e6683c 25%,
+            #dc2743 50%,
+            #cc2366 75%,
+            #bc1888 100%);
+    border-radius: 20%;
+}
+
+.footer-ours {
+    border-top: 2px solid orange;
+    margin: 15px;
+}
+
+.footer-ours p {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+/* FOOTER SECTION END */
+
+        @media (max-width: 768px) {
+            .about-section,
+            .journey-content,
+            .specialties-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+        }
+        .footer-ours .cop{
+    font-size: 12px;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="fav.html"><img src="logo.jpg" alt="logo" /></a>
+          <p>My Favorite Things</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="fav.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+            <div class="buttons">
+            <button class="btn"><a href="login.html">Login</a></button>
+            <button class="btn"><a href="login.html">Signup</a></button></div>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>About Premium Drinks</h1>
+            <p>A passion project dedicated to crafting exceptional beverages</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about-section">
+            <div class="about-content">
+                <h2>The Vision</h2>
+                <p>Premium Drinks was born from a deep passion for creating unique and exceptional beverages. Starting in 2024, this project aims to bring innovative drink experiences to life.</p>
+                <p>Every creation is carefully crafted with attention to detail, using only the finest ingredients to ensure an unforgettable taste experience.</p>
+            </div>
+            <div class="about-content">
+                <h2>The Commitment</h2>
+                <p>Quality and innovation are at the heart of every drink created. Each recipe is developed through careful experimentation and refinement to achieve the perfect balance of flavors.</p>
+                <p>Sustainability is also a key focus, with eco-friendly packaging and responsible sourcing practices being implemented from day one.</p>
+            </div>
+        </div>
+
+        <div class="journey">
+            <h2>My Journey</h2>
+            <div class="journey-content">
+                <div class="milestone">
+                    <h3>The Beginning</h3>
+                    <p>Started experimenting with unique drink combinations in early 2024</p>
+                </div>
+                <div class="milestone">
+                    <h3>Development</h3>
+                    <p>Created signature recipes and established quality standards</p>
+                </div>
+                <div class="milestone">
+                    <h3>Future Vision</h3>
+                    <p>Working towards expanding the menu and reaching more drink enthusiasts</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="specialties">
+            <h2>Signature Offerings</h2>
+            <div class="specialties-grid">
+                <div class="specialty-item">
+                    <h3>Craft Mocktails</h3>
+                    <p>Innovative alcohol-free beverages that deliver complex and sophisticated flavor profiles</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>Artisanal Sodas</h3>
+                    <p>Handcrafted sodas using natural ingredients and unique flavor combinations</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>Premium Teas</h3>
+                    <p>Carefully selected tea blends with custom infusions and creative twists</p>
+                </div>
+                <div class="specialty-item">
+                    <h3>Seasonal Specials</h3>
+                    <p>Limited edition beverages that celebrate the flavors of each season</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer -->
+    <footer>
+        <div class="footer-logo">
+          <img src="logo.jpg" alt="logo" />
+          <p>My Favorite Things</p>
+        </div>
+        <div class="footer-cont">
+          <div class="footer-info">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact me</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-contact">
+            <h3>Contact me</h3>
+            <p>Name : L.Naveen Kumar</p>
+            <p>
+              Email :
+              <a href="mailto:lukalapunave@gmail.com">lukalapunave@gmail.com</a>
+            </p>
+            <p>Phone No : +91 8186******</p>
+            <p>Address : Srikakulam</p>
+          </div>
+  
+          <div class="footer-follow">
+            <h3>Follow me</h3>
+            <div class="access">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-ours">
+          <p>
+            ..This page is about my Favourites and it is for myself only , not for
+            any use..
+          </p>
+          <p class="cop">&copy; 2024 Premium Drinks. All rights reserved.</p>
+
+        </div>
+      </footer>
+</body>
+</html>

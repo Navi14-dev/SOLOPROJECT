@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Cards</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    
+}
+
+.card button:hover {
+    background-color: #ff4500;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/delicious-healthy-chickpea-burger-veganism-food-concept_123827-16693.jpg?semt=ais_hybrid" alt="Food Image">
+            <h3>Burger</h3>
+            <p>A delicious burger with fresh lettuce, tomato, and cheese.</p>
+            <button>Order to Eat</button>
+        </div>
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/2150383746/photo/food-photos-various-entrees-appetizers-deserts-etc.jpg?s=612x612&w=0&k=20&c=Wotwv3RdBzDmgijx4ujP44aaC6GF53bleATVcLFRqO0=" alt="Food Image">
+            <h3>Pizza</h3>
+            <p>A classic pizza with mozzarella, pepperoni, and fresh basil.</p>
+            <button>Order to Eat</button>
+        </div>
+        <div class="card">
+            <img src="https://www.allrecipes.com/thmb/i7yLualeJp6h7nuux-Dnr7AUI6o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/4559474-vegetarian-sushi-Buckwheat-Queen-4x3-1-af11cac7218240e383dbe72ef6b1ec8f.jpg" alt="Food Image">
+            <h3>Sushi</h3>
+            <p>Fresh sushi rolls with salmon, avocado, and rice.</p>
+            <button>Order to Eat</button>
+        </div>
+        <div class="card">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/chilli-paneer-recipe.jpg" alt="Food Image">
+            <h3>Chilli panneer</h3>
+            <p>Chilli panneer with a rich tomato sauce and parmesan cheese.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Add more cards as needed -->
+         <!-- Card 1 -->
+         <div class="card">
+            <img src="https://kannanskitchen.com/wp-content/uploads/2021/05/IMG_20200927_142549_Bokeh_1.jpg" alt="Veg Manchurian">
+            <h3>Veg Manchurian</h3>
+            <p>Crispy vegetable balls tossed in a tangy and spicy Manchurian sauce.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://vegecravings.com/wp-content/uploads/2017/03/veg-hakka-noodles-recipe-with-step-by-step-instructions.jpg" alt="Hakka Noodles">
+            <h3>Hakka Noodles</h3>
+            <p>Stir-fried noodles with fresh vegetables and a hint of soy sauce.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://revisfoodography.com/wp-content/uploads/2017/01/veg-spring-roll-main-500x375.jpg" alt="Spring Rolls">
+            <h3>Spring Rolls</h3>
+            <p>Crispy rolls filled with shredded vegetables, served with a sweet chili dip.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/schezwan-fried-rice-recipe.jpg" alt="Szechuan Fried Rice">
+            <h3>Szechuan Fried Rice</h3>
+            <p>Spicy fried rice with a mix of vegetables and Szechuan sauce.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="https://img-global.cpcdn.com/recipes/5ed22d486ba42d1e/680x482cq70/garlic-mushroom-paneer-stirfry-recipe-main-photo.jpg" alt="Chilli Paneer">
+            <h3>mushroom Paneer</h3>
+            <p>Cubes of paneer tossed in a spicy and tangy sauce with bell peppers.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="https://shwetainthekitchen.com/wp-content/uploads/2023/06/veg-fried-rice.jpg" alt="Veg Fried Rice">
+            <h3>Veg Fried Rice</h3>
+            <p>Classic fried rice with a mix of fresh vegetables and soy sauce.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 7 -->
+        <div class="card">
+            <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/08/sweet-corn-soup-recipe.jpg" alt="Sweet Corn Soup">
+            <h3>Sweet Corn Soup</h3>
+            <p>A comforting soup made with sweet corn, vegetables, and a light broth.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 8 -->
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1292635321/photo/veg-steam-momo-nepalese-traditional-dish-momo-stuffed-with-vegetables-and-then-cooked-and.jpg?s=612x612&w=0&k=20&c=NyxQvDnBq7Ki09Zi21JEMxpuZ_uVr45ZBSavqXJ2T1s=" alt="Veg Momos">
+            <h3>Veg Momos</h3>
+            <p>Steamed dumplings filled with a mix of vegetables, served with spicy chutney.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 9 -->
+        <div class="card">
+            <img src="https://t3.ftcdn.net/jpg/03/99/82/32/360_F_399823213_4vtZyoSSdB1m6UP93LXWogg2UCNkoiZi.jpg" alt="Schezwan Noodles">
+            <h3>Schezwan Noodles</h3>
+            <p>Spicy Schezwan sauce tossed with noodles and fresh vegetables.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 10 -->
+        <div class="card">
+            <img src="https://www.cookwithmanali.com/wp-content/uploads/2024/01/Hot-and-Sour-Soup-Vegetarian.jpg" alt="Veg Hot and Sour Soup">
+            <h3>Veg Sour Soup</h3>
+            <p>A tangy and spicy soup made with mushrooms, tofu, and vegetables.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 11 -->
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/xkMbJCtaaqA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDrMLgdijp9TJ92IUYugdtisp2tIw" alt="Gobi Manchurian">
+            <h3>Gobi Manchurian</h3>
+            <p>Crispy cauliflower florets coated in a spicy and tangy Manchurian sauce.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 12 -->
+        <div class="card">
+            <img src="https://i.ytimg.com/vi/6-1-sEW_6ko/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB5eaEzC3klK_KNz2hF5cQr2QRHww" alt="Veg Chowmein">
+            <h3>Veg Chowmein</h3>
+            <p>Stir-fried noodles with a mix of vegetables and a savory sauce.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 13 -->
+        <div class="card">
+            <img src="https://dukaan.b-cdn.net/1000x1000/webp/projecteagle/images/63638cb7-8be6-4b22-ba34-5d87051e7aaa.jpg" alt="Paneer Spring Rolls">
+            <h3>Paneer Spring Rolls</h3>
+            <p>Crispy rolls filled with paneer and vegetables, served with a tangy dip.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 14 -->
+        <div class="card">
+            <img src="https://www.ndtv.com/cooks/images/vegetable.dim.sum.jpg" alt="Veg Dim Sum">
+            <h3>Veg Dim Sum</h3>
+            <p>Steamed dumplings filled with a mix of vegetables and spices.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 15 -->
+        <div class="card">
+            <img src="https://greenbowl2soul.com/wp-content/uploads/2022/08/creamy-vegetable-noodle-soup.jpg" alt="Veg Noodle Soup">
+            <h3>Veg Noodle Soup</h3>
+            <p>A hearty soup with noodles, vegetables, and a flavorful broth.</p>
+            <button>Order to Eat</button>
+        </div>
+        <!-- Card 16 -->
+        <div class="card">
+            <img src="https://i0.wp.com/www.foodorderkar.com/wp-content/uploads/2022/10/263976.jpg?fit=678%2C452&ssl=1" alt="Veg Fried Momos">
+            <h3>Veg Fried Momos</h3>
+            <p>Crispy fried momos filled with vegetables, served with spicy chutney.</p>
+            <button>Order to Eat</button>
+        </div>
+       
+    </div>
+</body>
+</html>
